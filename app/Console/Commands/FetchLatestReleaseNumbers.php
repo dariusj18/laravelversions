@@ -45,7 +45,7 @@ class FetchLatestReleaseNumbers extends Command
                     $this->info('Created Laravel version ' . $semver);
 
                     return;
-                }  
+                }
                 if (empty($version->changelog)) {
                     $version->update([
                         'released_at' => $item['createdAt'],
