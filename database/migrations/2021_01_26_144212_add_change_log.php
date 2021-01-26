@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class AddChangeLog extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::table('laravel_versions', function (Blueprint $table) {
@@ -19,11 +14,6 @@ class AddChangeLog extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::table('laravel_versions', function (Blueprint $table) {
