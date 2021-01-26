@@ -110,7 +110,7 @@
                     <div class="text-center my-3 px-8">
                         @foreach ($releases as $release)
                             <a href="#{{ $release }}" class="whitespace-nowrap">{{ $release }}</a>
-                            @if(!$loop->last) | @endif
+                            @if (!$loop->last) | @endif
                         @endforeach
                     </div>
                     <div class="mb-8">
